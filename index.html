@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <link rel="stylesheet" href="./css/style-flex.css">
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="menu">
+                <div class="logo">
+                    <!-- <img src="./assets/img/codoacodoRecortada.png" alt="Codo a Codo"> -->
+                    <h2>Conf Bs.As.</h2>
+                </div>
+                <nav class = "navHeader">   
+                    <ul class="listaNav">
+                        <li class="listaItem"><a href="#" class="link">La conferencia</a></li>
+                        <li class="listaItem"><a href="#" class="link">Los oradores</a></li>
+                        <li class="listaItem"><a href="#" class="link">El lugar y la fecha</a></li>
+                        <li class="listaItem"><a href="#" class="link convEnOrador">Conviértete en orador</a></li>
+                        <li class="listaItem"><a href="#" class="link compraTicket">Comprar tickets</a></li>
+                        <li class="listaItem"><input type="button" class="modOscuro" id="modOscuro" value="Oscuro"></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="form" id="form">
+                <div class="Categorias">
+                    <div class="Categoria Estudiante" id="catEstudiante" >
+                        <h3 class="titulo">Estudiante</h3>
+                        <p>Tienen un descuento</p>
+                        <p class="porcen">80%</p>
+                        <p class="doc">* presentar documentación</p>
+                    </div>
+                    <div class="Categoria Trainee" id="catTrainee" >
+                        <h3 class="titulo">Trainee</h3>
+                        <p>Tienen un descuento</p>
+                        <p class="porcen">50%</p>
+                        <p class="doc">* presentar documentación</p>
+                    </div>
+                    <div class="Categoria Jr" id="catJr" >
+                        <!-- onclick="seleccionaCartelCategoria();" -->
+                        <h3 class="titulo">Junior</h3>
+                        <p>Tienen un descuento</p>
+                        <p class="porcen">15%</p>
+                        <p class="doc">* presentar documentación</p>
+                    </div>
+                </div>
+                <div class="formDiv">
+                    <h2><span class="textVenta">VENTA</span><br><span class="textValorTicket">VALOR DE TICKET $200</span></h2>
+                    <form class="formulario" action="formulario">
+                        <div class="txtForm">
+                            <input class="txt" type="text" placeholder="Nombre" required>
+                            <input class="txt" type="text" placeholder="Apellido" required>
+                        </div>
+                        <div class="txtEmail">
+                            <input class="txt tcorreo" type="email" placeholder="Correo" required>
+                        </div>
+                        <div class="cantCat">
+                            <div class="div Cant">
+                                <label class="lblCa">Cantidad</label>
+                                <input class="txt txtCa" type="number" placeholder="Cantidad" id="cant" value = 1 required>
+                            </div>  
+                            <div class="div Cat">
+                                <label class="lblCa">Categoria</label>
+                                <select class="txt txtCa" name="select" id="cmbBox" >
+                                    <!-- onchange="seleccionarOpcion();" -->
+                                    <option>Seleccione una opcion</option>
+                                    <option value="Estudiante">Estudiante</option>
+                                    <option value="Trainee">Trainee</option>
+                                    <option value="Junior">Junior</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="totAPagar"> 
+                            <label class="lblTotalAPagar" id="lblTotalAPagar">Total a Pagar: $</label>
+                            <span id="lblMontoTotal"></span>
+                        </div>
+                        <div class="btnVerde">
+                            <input type="reset" value="Borrar" id="btnBorrar" onclick="limpiarTodo();">
+                            <input type="button" value="Resumen" id="btnResumen" onclick="seleccionarOpcion();">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footerDiv">
+                <div class="footerAnclas">
+                    <a class="anclaFooter" href="">Preguntas <br> frecuentes</a>
+                    <a class="anclaFooter" href="">Contáctanos</a>
+                    <a class="anclaFooter" href="">Prensa</a>
+                    <a class="anclaFooter" href="">Conferencias</a>
+                    <a class="anclaFooter" href="">Términos y  <br>condiciones</a>
+                    <a class="anclaFooter" href="">Privacidad</a>
+                    <a class="anclaFooter" href="">Estudiantes</a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/javascript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #000000;
+}
+.body .dark-mode{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+/*********************** HEADER ************************/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1.25rem 4rem 1.25rem 1.5rem;
+    background-color: rgba(53,58,64,255);
+}
+.modOscuro{
+    margin-left: 4rem;
+    border-radius: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.logo{
+    align-items: center;
+    width: 25%;
+    display: flex;
+    /* margin-left: 5%; */
+}
+/* .logo img{
+    object-fit: cover;
+    max-height: 70%;
+    max-width: 15vw;
+} */
+.logo h2{
+    color: white;
+    font-weight: 500;
+    margin-left: 5%;
+    font-size: 1.7rem;
+}
+.navHeader .listaNav{
+    list-style: none;
+    color: rgba(140,152,156,255);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.link{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(153, 153, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compraTicket{
+    color: rgba(42,180,67,255);
+}
+.convEnOrador{
+    color: rgba(245, 245, 245, 0.87);
+}
+/* Categorias */
+.Categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+.Categoria{
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 1.2rem 1.4rem;
+    line-height: 2.2rem;
+    /* cursor: pointer; */
+}
+.Estudiante{
+    border-color: rgba(102,176,255,255);
+}
+.Trainee{
+    margin: 0 0.5rem;
+    border-color: rgba(115,199,212,255);
+}
+.Jr{
+    border-color: rgba(255,218,106,255);
+}
+.porcen{
+    font-weight: bold;
+}
+.doc{
+    color: grey;
+    font-size: small;
+}
+/* Formulario */
+.form{
+    margin: 1rem 0;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+.formDiv{
+    width: 60%;
+}
+.textConvertirse{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.form h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+}
+.textVenta{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.txtForm{
+    margin: 0.5rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+.txtEmail{
+    width: 100%;
+    margin-bottom: 1.1rem;
+}
+.cantCat{
+    display: flex;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+}
+
+.div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.txt{
+    width: 49%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: rgb(177, 177, 177) 1px solid;
+    font-size: 1.1rem;
+}
+.tcorreo{
+    width: 100%;
+}
+.lblCa{
+    margin: 0.5rem 0;
+}
+.Cat{
+    margin-left: 1rem;
+}
+.txtCa{
+    width: 100%;
+}
+.totAPagar{
+    text-decoration: none;
+    background-color: rgba(204,229,255,255);
+    border-radius: 3px;
+    padding: 1.5rem;
+    margin: 3rem 0 1rem 0;
+    border: 0.5px solid rgba(204,200,255,255);
+    width: 100%;
+    color: rgba(8,70,138,255);
+    font-size: medium;
+}
+.lblTotalAPagar{
+    color: rgba(8,70,138,255);
+}
+.btnVerde{
+    display: flex;
+    justify-content: space-between;
+}
+.btnVerde input{
+    width: 49%;
+    background-color: rgba(150,201,62,255);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    height: 1rem;
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+    margin: 1.5rem 0 1rem 0;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+/*********************** FOOTER ************************/
+.footerDiv{
+    text-decoration: none;
+    background:linear-gradient(to right, rgba(28,54,67,255),rgba(30,83,113,255) );
+    color: white;
+    padding: 2rem 0;
+    width: 100%;
+}
+.footerAnclas{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+.anclaFooter{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/*********************** MEDIA QUERY ************************/
+/*breakpoint para celular de 0 a 767px*/
+@media screen and (max-width: 767px)  {
+
+    /*********************** HEADER ************************/
+    /* Menu */
+    .menu{
+        height: 30vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        margin:0 0 0.6rem 0;
+        height: 35%;
+        width: 100%;
+        justify-content: center;
+    }
+    .logo img{
+        max-width: 20vw;
+        min-width: 10vw;
+    }
+    .navHeader .listaNav{
+        justify-content: space-around;
+        width: 100%;
+    }
+    /* Conferencia Bs As */
+    .conferenciaBsAs{
+        height: 60vh;
+    }
+    .confBsAs{
+        height: 50%;
+        font-size: 1rem;
+        width: 80%;
+        height: auto;
+        align-self: flex-end;
+        margin-bottom: 10%;
+    }
+    .confBsAs h1{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .confBsAs p{
+        line-height: 1.3rem;
+    }
+    .btns{
+        margin: 2rem 0;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    /*********************** MAIN ************************/
+    /* Cards */
+    .titConoce{
+        line-height: normal;
+        margin-bottom: 1rem;
+    }
+    .conoceOradores{
+        height: initial;
+    }
+    .oradores{
+        height: initial;
+    }
+    .orador{
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    /* Bs As Octubre - Honolulu*/
+    .bsAsOctubre{
+        height: initial;
+        flex-direction: column;
+        width: 100%;
+        height: 95vh;
+    }
+    .imgHonolulu{
+        width: 100%;
+        height: 50%;
+    }    
+    .textOctubre{
+        width: 100%;
+        font-size: 1rem;
+        height: 50%;
+    }
+    .textOctubre p{
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    .textOctubre h4{
+        font-size: 1.5rem;
+    }
+    /* Formulario */
+    .form{
+        height: initial;
+    }
+    .pForm{
+        font-size: 1rem;
+    }
+    .txtAreaOrador{
+        width: 80vw;
+    }
+    /*********************** FOOTER ************************/
+    .footerDiv{
+        width: 100%;
+    }
+    .anclaFooter{
+        font-size: 1rem;
+        margin: auto;
+    }
+}
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /*********************** HEADER ************************/
+    .menu{
+        padding: 1rem;
+    }
+    .logo{
+        margin: 0;
+    }
+    .logo h2{
+        font-size: 1.5rem;
+    }
+    .link{
+        font-size: 1.2rem;
+    }
+    /* Conferencia Bs As */
+    .confBsAs{
+        width: 90%;
+        height: auto;
+        align-self: flex-end;
+        margin-bottom: 10%;
+    }
+    /*********************** MAIN ************************/
+    /* Cards */
+    .conoceOradores{
+        height: initial;
+    }
+    .oradores{
+        height: initial;
+    }
+    .orador{
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    /* Bs As Octubre - Honolulu*/
+    .bsAsOctubre{
+        height: initial;
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+    }
+    .imgHonolulu{
+        width: 100%;
+        height: 50%;
+    }
+    .textOctubre{
+        width: 100%;
+        font-size: 1rem;
+        height: 50%;
+    }
+    .textOctubre p{
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    .textOctubre h4{
+        font-size: 2rem;
+    }
+    /* Formulario */
+    .form{
+        height: initial;
+    }
+    .pForm{
+        font-size: 1rem;
+    }
+    .txtAreaOrador{
+        width: 80vw;
+    }
+    /*********************** FOOTER ************************/
+    .footerDiv{
+        width: 100%;
+    }
+    .anclaFooter{
+        font-size: 1rem;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 556px)  {
+    .navHeader .listaNav{
+        flex-direction: column;
+    }
+    .footerAnclas{
+        flex-direction: column;
+        line-height: normal;
+    }
+    .anclaFooter{
+        padding: 0.5rem 0;
+    }
+}
+@media screen and (min-width:1023px) and (max-width:1500px){
+    .logo{
+        margin: 0;
+    }
+    .logo img{
+        max-width: 15vw;
+        max-height: 7vh;
+    }
+    /* Conf Bs As */
+    .confBsAs{
+        width: 80%;
+        height: auto;
+        align-self: flex-end;
+        margin-bottom: 10%;
+    }
+    /* Cards */
+    .conoceOradores{
+        height: initial;
+    }
+    .oradores{
+        width: initial;
+    }
+    .orador img{
+        height: initial;
+    }
+    .orador{
+        height: 85vh;
+    }
+    .textOrador p{
+        line-height: normal;
+    }
+    /* Bs As Octubre */
+    .textOctubre p{
+        line-height: 1.5rem;
+    }
+    /* Formulario */
+    .form{
+        height: initial;
+    }
+}
